@@ -4,4 +4,6 @@
 ### Objectif : 
 Récupérer et diffuser UN flux radio en ligne. Pour généraliser à plusieurs flux, il faudra d'abord collecter - automatiquement - les flux du web en utilisant par exemple Scrapy et Selenium (voir ci-dessous).
 
-Lien pour un flux : 
+Lien pour un flux : https://sites.google.com/view/j-lab-10/accueil (Google Sites)
+Lien venant d'un fichier HTML du projet actuel : 
+
