@@ -8,3 +8,6 @@ Lien pour un flux : [par Google Sites](https://sites.google.com/view/j-lab-10/ac
 
 Lien venant d'un fichier HTML du projet actuel : [ici](https://htmlpreview.github.io/?https://github.com/Xajer28/Poly_REVA_Archi/blob/master/Version%201.0/index.html)
 
+## Version 1.1 : 
+### Objectif : 
+Modifier l'architecture de votre App (version 1.0) pour y intégrer un serveur
