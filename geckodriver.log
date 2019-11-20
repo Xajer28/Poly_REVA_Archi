@@ -595,3 +595,11 @@ JavaScript error: chrome://browser/content/browser-customization.js, line 176: N
 1574243513603	Marionette	INFO	Listening on port 40139
 1574243513665	Marionette	WARN	TLS certificate errors will be ignored for this session
 1574243528066	Marionette	INFO	Stopped listening on port 40139
+1574245171032	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYA7i0a"
+1574245171676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574245171676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574245171677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574245171677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574245175102	Marionette	INFO	Listening on port 42971
+1574245175146	Marionette	WARN	TLS certificate errors will be ignored for this session
+1574245189664	Marionette	INFO	Stopped listening on port 42971
