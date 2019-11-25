@@ -36,7 +36,7 @@ for j in range(len(elts_titles)):
     })
 
 name_file = 'radios.json'
-with open('./radios_json/'+name_file, 'w') as outfile:
+with open('./Site/'+name_file, 'w') as outfile:
     json.dump(data, outfile)
 
 # Fermer le webdriver
