@@ -6,7 +6,7 @@ async function getRadios() {
   return await result.json();
 }
 
-function fillSelect() {
+function selectRadios() {
   getRadios().then(radios => {
     let option;
     console.log(radios.length);
@@ -34,4 +34,4 @@ function fillSelect() {
   });
 }
 
-fillSelect();
+selectRadios();
