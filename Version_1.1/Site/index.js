@@ -17,7 +17,6 @@ function fillSelect() {
       option.textContent =  tab[j].name;
       radioList.appendChild(option);
     }
-
     radioList.onchange = ev => {
       audio.src = ev.target.value;
       console.log(ev.target.value);

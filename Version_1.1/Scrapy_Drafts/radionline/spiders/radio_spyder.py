@@ -5,7 +5,7 @@ from selenium import webdriver
 class RadioSpyderSpider(scrapy.Spider):
     name = 'radio-spyder'
     allowed_domains = ['linuxpedia.fr']
-    start_urls = ['http://https://www.linuxpedia.fr/doku.php/flux_radio/']
+    start_urls = ['http://www.linuxpedia.fr/doku.php/flux_radio/']
 
     def __init__(self):
         self.driver = webdriver.Firefox()
@@ -13,7 +13,7 @@ class RadioSpyderSpider(scrapy.Spider):
     def parse(self, response):
         # # Print what the spider is doing
         # print(response.url)
-        #  # Get all the <a> tags
+        #  # Get all the <h2> tags
         # h2_selectors = response.xpath("//h2")
 
         self.driver.get(response.url)
