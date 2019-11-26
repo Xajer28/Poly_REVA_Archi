@@ -13,7 +13,7 @@ function fillSelect() {
     for (var j = 0; j < radios.length; j++) {
       option = document.createElement("option");
       var radio = radios[j];
-      // Check if readable by audio player
+      // Verification du format pour lecture dans la balise html
       if(radio.link.includes('.mp3'))
       {
         option.value = radios[j].link;
