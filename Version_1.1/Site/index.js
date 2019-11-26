@@ -9,13 +9,17 @@ async function getRadios() {
 function fillSelect() {
   getRadios().then(radios => {
     let option;
-    var tab = radios.radios_linuxpedia;
-    console.log(tab.length);
-    for (var j = 0; j < tab.length; j++) {
+    console.log(radios.length);
+    for (var j = 0; j < radios.length; j++) {
       option = document.createElement("option");
-      option.value = tab[j].link;
-      option.textContent =  tab[j].name;
-      radioList.appendChild(option);
+      var radio = radios[j];
+      // Check if readable by audio player
+      if(radio.link.includes('.mp3'))
+      {
+        option.value = radios[j].link;
+        option.textContent = radios[j].name;
+        radioList.appendChild(option);
+      }
     }
     radioList.onchange = ev => {
       audio.src = ev.target.value;

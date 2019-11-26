@@ -13,8 +13,6 @@ class RadioSpyderSpider(scrapy.Spider):
     def parse(self, response):
         # # Print what the spider is doing
         # print(response.url)
-        #  # Get all the <h2> tags
-        # h2_selectors = response.xpath("//h2")
 
         self.driver.get(response.url)
         elts = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/div[2]/div/div[2]")
@@ -30,9 +28,7 @@ class RadioSpyderSpider(scrapy.Spider):
         # for i in range(len(elts_links)):
         #     print(elts_links[i].text)
 
-        # Mettre en forme
-        #Print all h1
-        # Loop on each tag
+        # Integrer dans le JSON
         for i in range(len(elts_links)):
             yield {
                 'name' : elts_titles[i].text,

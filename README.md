@@ -37,8 +37,7 @@ python3 firefox_draft.py
 - Executer la spider (Mettre a jour le JSON): 
 ```code
 cd ./Version_1.1/Scrapy_Drafts
-scrapy crawl radio-spyder -o radios.json
-cp ./output.json ../Site
+scrapy crawl radio-spyder -o radios.json && cp ./output.json ../Site
 ```
 
 - [Lien du site résultant](https://htmlpreview.github.io/?https://github.com/Xajer28/Poly_REVA_Archi/blob/master/Version_1.1/Site/index.html)
