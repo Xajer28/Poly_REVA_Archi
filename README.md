@@ -1,4 +1,4 @@
-# Projet Architecture des Applications - Polytech REVA 2019/20 - Jerome L.
+# Projet Architecture des Applications - Polytech REVA 2019/20 - Jerome L. - Mathilde M. - Ana-Maria T.
 
 ## Version 1.0 : 
 ### Objectif : 

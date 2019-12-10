@@ -1,0 +1,27 @@
+{
+  "name": "v1.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child-process": "^1.0.2",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "cvlc": "^0.1.0",
+    "delay": "^4.3.0",
+    "ejs": "^2.7.3",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "nodemon": "^1.19.4",
+    "vlc-command": "^1.2.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
