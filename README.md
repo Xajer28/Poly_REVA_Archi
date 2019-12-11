@@ -37,6 +37,13 @@ scrapy crawl radio-spyder -o radios.json && cp ./output.json ../Site
 
 - [Lien du site résultant](https://htmlpreview.github.io/?https://github.com/Xajer28/Poly_REVA_Archi/blob/master/Version_1.1/Site/index.html)
 
+#### Support VLC (Lire le flux depuis un port diffusé par VLC)
+
+- Se situer dans ```Version_1.1/VLC-Server/```
+- Lancer la commande ```node server```
+- Sélectionner une radio dans le menu déroulant
+- Attendre que le flux arrive dans le lecteur
+- Profitez ! :)
 
 ## Dépendances :
 - [Scrapy](https://scrapy.org/)
