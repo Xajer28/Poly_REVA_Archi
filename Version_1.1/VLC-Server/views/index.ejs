@@ -1,20 +1,29 @@
 <!doctype HTML>
 <html>
-<head>
-</head>
 
-<body>
-    <h2>Selectionnez une radio</h2>
-    <form method="post" action="/" id="radio_form" >
-        <select class="radio_select" name="radio_select" >
+    <head>
+        <script>
+                function debug(){
+                    var sel = document.getElementById("radio_select");
+                    // console.log(sel.value);
+                    fetch("http://localhost:3000/radio?link="+sel.value).then( res=>
+                    res.json()).then(json=>{
+                        console.log("Port reçu");
+                        var bal_audio = document.querySelector("audio");
+                        bal_audio.src="http://127.0.0.1:"+json.PortNumber+"/";
+                        console.log(json.PortNumber);
+                    })
+                }
+        </script>
+    </head>
+
+    <body>
+        <h2>Selectionnez une radio</h2>
+        <select class="radio_select" id="radio_select" onchange="debug()" >
             <% for(var i=0; i < rows.length; i++) { %>
                 <option value="<%= rows[i].link %>"><%= rows[i].name %></option>
             <% } %>
         </select>
-    </form>
-    <button type="submit" form="radio_form" value="Submit">Lire la radio</button>
-    <!-- <h2>Flux radio associé (accès par VLC)</h2> -->
-    <!-- <audio controls src="http://localhost/radio/<%=i%>"></audio> -->
-</body>
-
+        <audio preload="metadata" controls="" autoplay="" src=""></audio>
+    </body>
 </html>
