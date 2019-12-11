@@ -1,0 +1,20 @@
+<!doctype HTML>
+<html>
+<head>
+</head>
+
+<body>
+    <h2>Selectionnez une radio</h2>
+    <form method="post" action="/" id="radio_form" >
+        <select class="radio_select" name="radio_select" >
+            <% for(var i=0; i < rows.length; i++) { %>
+                <option value="<%= rows[i].link %>"><%= rows[i].name %></option>
+            <% } %>
+        </select>
+    </form>
+    <button type="submit" form="radio_form" value="Submit">Lire la radio</button>
+    <!-- <h2>Flux radio associé (accès par VLC)</h2> -->
+    <!-- <audio controls src="http://localhost/radio/<%=i%>"></audio> -->
+</body>
+
+</html>

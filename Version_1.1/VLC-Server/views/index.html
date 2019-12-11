@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JL-1.1-Radios</title>
+
+  <script>
+  var requestJson = 'radios.json';
+  var request = new XMLHttpRequest();
+  //Requete envoyée au serveur pour recevoir le JSON
+  request.open("GET",requestJson,false);
+  //Des qu'on le reçoit on le traite
+  request.onreadystatechange=function(){
+    if (this.readyState == 4 && this.status == 200) {
+      var radios = JSON.parse(requestJson.responseText);
+      //Comme dans la version précedente
+      let option;
+      console.log(radios.length);
+      for (var j = 0; j < radios.length; j++) {
+        option = document.createElement("option");
+        var radio = radios[j];
+        // Verification du format pour lecture dans la balise html
+        if(radio.link.includes('.mp3'))
+        {
+          option.value = radios[j].link;
+          option.textContent = radios[j].name;
+          radioList.appendChild(option);
+        }
+      }
+
+      radioList.onchange = ev => {
+        audio.src = ev.target.value;
+        console.log(ev.target.value);
+        audio.play();
+        localStorage.setItem("current_radio", audio.src);
+        localStorage.setItem("option_index", radioList.selectedIndex);
+      };
+
+      audio.src = localStorage.getItem("current_radio");
+      radioList.selectedIndex = localStorage.getItem("option_index");
+    };
+  }
+
+  request.send(null);
+  </script>
+
+  </head>
+
+  <body>
+    <h2>Selectionnez une radio</h2>
+    <select></select>
+    <h2>Flux radio associé</h2>
+    <audio controls src="http://icecast.radiofrance.fr/franceinter-lofi.mp3"></audio>
+  </body>
+
+</html>
