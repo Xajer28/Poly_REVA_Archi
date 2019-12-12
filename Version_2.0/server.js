@@ -2,6 +2,7 @@ var express = require('express'),
   app = express(),
   path = require('path'),
   jsdom = require("jsdom");
+  
 var JSDOM = jsdom.JSDOM;
 
 const hostname = '127.0.0.1';

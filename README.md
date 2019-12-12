@@ -45,8 +45,14 @@ scrapy crawl radio-spyder -o radios.json && cp ./output.json ../Site
 - Attendre que le flux arrive dans le lecteur
 - Profitez ! :)
 
+## Version 2.0
+### getUserMedia
+On récupère le flux video de la webcam du client.
+
 ## Dépendances :
 - [Scrapy](https://scrapy.org/)
 - [Selenium](https://selenium.dev/)
 - [Geckodriver](https://github.com/mozilla/geckodriver/releases) (Moteur Firefox)
 - [Python3](https://www.python.org/)
+- [NodeJS](https://nodejs.org)
+- [WecRTC](https://webrtc.org/)
