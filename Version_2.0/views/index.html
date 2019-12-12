@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Version 2.0
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            body{
+                padding-top: 5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script src='index.js'></script>
+        <nav class="navbar navbar-fixed-top navbar-dark">
+            <a class ="navbar-brand" href="#"> WebRTC - Version 2.0</a>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Réception</h2>
+                    <video id="receiver-video" width="100%" height="400px" autoplay playsinline></video>
+                    <p>
+                        <button id="start">Démarrer la conversation</button>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Envoi</h2>
+                    <video id="emitter-video" width="100%" height="400px" autoplay playsinline></video>
+                </div>
+            </div>
+        <div id="errorMsg"></div>
+        </div>
+    </body>
+</html>

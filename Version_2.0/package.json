@@ -1,0 +1,20 @@
+{
+  "name": "version_2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "http": "0.0.0",
+    "jsdom": "^15.2.1",
+    "simple-peer": "^9.6.2"
+  }
+}
